@@ -1,0 +1,15 @@
+﻿@startuml
+actor "Пользователь" as User
+rectangle Шифровальщик {
+(Дешифрование) as Desh
+(Шифрование) as Shifr
+(Генерация ключа) as Key
+(Преобразование) as Preob
+Shifr ..> Key : включает
+Shifr --|> Preob
+Desh --|> Preob
+User -> Preob
+Preob ..> (Ввод сообщения) : включает
+Desh .> (Ввод ключа) : включает
+}
+@enduml
