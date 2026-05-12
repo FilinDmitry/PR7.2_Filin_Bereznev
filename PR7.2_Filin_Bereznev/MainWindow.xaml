@@ -8,5 +8,23 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         
+        <StackPanel>
+            <TextBlock x:Name="FakePage" Text="Дешифровка" FontSize="24" Margin="30"></TextBlock>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Width="200" TextAlignment="Right" Text="Сообщение" FontSize="20" Margin="10"></TextBlock>
+                <TextBox Width="400" FontSize="20" Height="35"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Width="200" TextAlignment="Right" Text="Ключ" FontSize="20" Margin="10"></TextBlock>
+                <TextBox Width="400" FontSize="20" Height="35"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Width="200" TextAlignment="Right" Text="Преобразованно в" FontSize="20" Margin="10"></TextBlock>
+                <TextBox IsEnabled="False" Width="400" FontSize="20" Height="35"></TextBox>
+            </StackPanel>
+            <Button x:Name="Main_button" Content="Преобразовать" FontSize="20" Width="250" Click="Main_button_Click"></Button>
+        </StackPanel>
+        <Button Content="Шифровка" Width="80" Height="30" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="10" Click="Button_Click"></Button>
+        <Button Content="Дешифровка" Width="80" Height="30" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="10,10,100,0" Click="Button_Click"></Button>
     </Grid>
 </Window>

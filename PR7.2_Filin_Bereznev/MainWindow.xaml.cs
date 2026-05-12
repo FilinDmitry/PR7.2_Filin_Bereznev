@@ -24,5 +24,16 @@ namespace PR7._2_Filin_Bereznev
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Button button = (Button)sender;
+            FakePage.Text = button.Content.ToString();
+        }
+
+        private void Main_button_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
 }
